@@ -37,13 +37,6 @@ public class CrossBrowserScript {
 			//create chrome instance
 			driver = new ChromeDriver();
 		}
-		//Check if parameter passed as 'Edge'
-				else if(browser.equalsIgnoreCase("Edge")){
-					//set path to Edge driver.exe
-					System.setProperty("webdriver.edge.driver",".\\MicrosoftWebDriver.exe");
-					//create Edge instance
-					driver = new EdgeDriver();
-				}
 		else{
 			//If no browser passed throw exception
 			throw new Exception("Browser is not correct");
